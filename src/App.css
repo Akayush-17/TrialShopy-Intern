@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+@import url('http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+
+
+.box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 10px;
+
+	width: 200px;
+	height: 90px;
+}
+.number {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	gap: 10px;
+
+	width: 50px;
+	height: 50px;
+	
+	border-radius: 120px;
+}
+.box-text {
+	/* width: 99px; */
+	height: 30px;
+
+	font-family: 'Poppins';
+	font-style: normal;
+	/* font-weight: 600; */
+	font-size: 20px;
+	line-height: 150%;
+	/* color: #27272a; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.labels {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 10px;
+
+	width: 340px;
+	height: 78px;
+	padding-left: 10px;
+	
+}
+.text {
+	height: 24px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	color: #27272a;
+}
+.input {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0px;
+	gap: 10px;
+	/* width: 380px; */
+	height: 44px;
+	background: #ffffff;
+	border-bottom: 1px solid #71717a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.button-text {
+	width: 39px;
+	height: 24px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	
+}
+.upload {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0px;
+	gap:10px;
+
+	width: 296px;
+	height: 74px;
+}
+
+@media (max-width: 768px) {
+	.container1 {
+	  flex-direction: row;
+	  align-items: center;
+	}
+  
+	.box {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.line {
+	  display: block;
+	}
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @media (max-width: 414px) {
+	.container1 {
+	  flex-direction: row;
+	  align-items: center;
+	}
+  
+	.box {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.line {
+	  display: block;
+	}
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+  
