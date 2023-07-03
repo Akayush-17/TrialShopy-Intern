@@ -56,39 +56,39 @@ const MainBusinessInfo = ({ initialValues = {} }) => {
 	return (
 		<div className="flex flex-col items-center p-0 gap-30 absolute w-[380px] sm:w-[1200px] sm:h-[562px] sm:left-[150px] top-[151.2px] ">
 			<div className="flex flex-row justify-around items-center gap-0  w-[380px] h-[45px] sm:w-[720px] sm:h-[90px]  mb-5">
-				<div className="box">
-					<div className="number bg-gradient-to-br from-gray-400 to-gray-900">
+				<div className="flex flex-col items-center p-0 sm:gap-4 w-[200px] h-[90px]">
+					<div className="flex flex-col justify-center items-center p-10 gap-10 w-[50px] h-[50px] rounded-full bg-gradient-to-br from-gray-400 to-gray-900">
 						1
 					</div>
-					<text className="w-[99px] sm:box-text text-center sm:font-semibold text-gray-800">
+					<text className="w-[99px] sm:h-[30px] sm:font-poppins font-normal sm:text-base leading-6 text-center sm:font-semibold text-gray-800">
 						Basic Info
 					</text>
 				</div>
-				<div className="sm:h-0 mt-[-40px] sm:mt-0 w-20 sm:border-[1px] border border-gray-900"></div>
-				<div className="box">
-					<div className="number bg-gradient-to-br from-gray-400 to-gray-900">
+				<div className="sm:h-0 mt-[-10px] sm:mt-0 w-24 sm:border-[1px] border border-gray-900"></div>
+				<div className="flex flex-col items-center p-0 sm:gap-4 w-[200px] h-[90px]">
+					<div className="flex flex-col justify-center items-center p-10 gap-10 w-[50px] h-[50px] rounded-full bg-gradient-to-br from-gray-400 to-gray-900">
 						2
 					</div>
-					<text className="w-[134px] sm:box-text text-center sm:font-semibold text-gray-800">
+					<text className="w-[134px] sm:h-[30px] sm:font-poppins font-normal sm:text-base leading-6 text-center sm:font-semibold text-gray-800">
 						Business Info
 					</text>
 				</div>
-				<div className="sm:h-0 mt-[-40px] sm:mt-0 w-20 sm:border-[1px] border border-gray-300"></div>
-				<div className="box">
-					<div className="number bg-gray-300">3</div>
-					<text className="sm:box-text w-[129px] text-sm text-center sm:font-normal text-gray-400">
+				<div className="sm:h-0 mt-[-10px] sm:mt-0 w-24 sm:border-[1px] border border-gray-300"></div>
+				<div className="flex flex-col items-center p-0 sm:gap-4 w-[200px] h-[90px]">
+					<div className="flex flex-col justify-center items-center p-10 gap-10 w-[50px] h-[50px] rounded-full bg-gray-300">3</div>
+					<text className="sm:h-[30px] sm:font-poppins font-normal sm:text-base leading-6 w-[129px] text-sm text-center sm:font-normal text-gray-400">
 						Verification
 					</text>
 				</div>
 			</div>
-			<div className="flex flex-col sm:flex-wrap items-center font-poppins p-0 gap-[20px] w-[380px] sm:w-[1200px] sm:h-[372px] mt-2 mb-3">
+			<div className="flex flex-col sm:flex-wrap items-center font-poppins p-0 gap-[20px] w-[380px] sm:w-[1200px] sm:h-[372px] mt-8 mb-3">
 	<form onSubmit={handleSubmit}>
 		<div className="sm:flex sm:flex-row gap-30">
 			<div className="sm:w-[360px] sm:mr-10 ">
-				<label className="labels">
+				<label className="flex flex-col items-start p-0 gap-[10px] w-[340px] h-[78px] pl-[10px]">
 					<text className=" text">Store Name:</text>
 					<input
-						className="input w-full"
+						className="box-border flex flex-row justify-center items-center p-2 gap-2 h-44 bg-white border-b border-gray-500 text-gray-700 w-[360px]"
 						type="text"
 						placeholder="Enter Name"
 						value={storeName}
@@ -97,10 +97,10 @@ const MainBusinessInfo = ({ initialValues = {} }) => {
 				</label>
 			</div>
 			<div className="sm:w-[790px]">
-				<label className="labels">
+				<label className="flex flex-col items-start p-0 gap-[10px] w-[340px] h-[78px] pl-[10px]">
 					<text className=" text">Store Description:</text>
 					<input
-						className="input w-full sm:w-[790px]"
+						className="box-border flex flex-row justify-center items-center p-2 gap-2 h-44 bg-white border-b border-gray-500 text-gray-700 w-[360px] sm:w-[760px]"
 						type="text"
 						placeholder="Enter Description"
 						value={storeDescription}
@@ -112,10 +112,10 @@ const MainBusinessInfo = ({ initialValues = {} }) => {
 		<br />
 		<div className="sm:flex sm:flex-row gap-30">
 			<div className="sm:w-[360px] sm:mr-10">
-				<label className="labels">
+				<label className="flex flex-col items-start p-0 gap-[10px] w-[340px] h-[78px] pl-[10px]">
 					<text className=" text">Pincode:</text>
 					<input
-						className="input w-full"
+						className="box-border flex flex-row justify-center items-center p-2 gap-2 h-44 bg-white border-b border-gray-500 text-gray-700 w-[360px]"
 						type="text"
 						placeholder="430023"
 						value={pincode}
@@ -124,10 +124,10 @@ const MainBusinessInfo = ({ initialValues = {} }) => {
 				</label>
 			</div>
 			<div className="sm:w-[360px] sm:mr-10">
-				<label className="labels">
+				<label className="flex flex-col items-start p-0 gap-[10px] w-[340px] h-[78px] pl-[10px]">
 					<text className=" text">Address 1:</text>
 					<input
-						className="input w-full"
+						className="box-border flex flex-row justify-center items-center p-2 gap-2 h-44 bg-white border-b border-gray-500 text-gray-700 w-[360px]"
 						type="text"
 						placeholder="(304) 555-0108"
 						value={address1}
@@ -136,10 +136,10 @@ const MainBusinessInfo = ({ initialValues = {} }) => {
 				</label>
 			</div>
 			<div className="sm:w-[410px]">
-				<label className="labels">
+				<label className="flex flex-col items-start p-0 gap-[10px] w-[340px] h-[78px] pl-[10px]">
 					<text className=" text">Address 2</text>
 					<input
-						className="input w-full"
+						className="box-border flex flex-row justify-center items-center p-2 gap-2 h-44 bg-white border-b border-gray-500 text-gray-700 w-[360px]"
 						type="text"
 						placeholder="(304) 555-0108"
 						value={address2}
@@ -151,10 +151,10 @@ const MainBusinessInfo = ({ initialValues = {} }) => {
 		<br />
 		<div className="sm:flex sm:flex-row gap-30">
 			<div className="sm:w-[340px] sm:mr-5">
-				<label className="labels">
+				<label className="flex flex-col items-start p-0 gap-[10px] w-[340px] h-[78px] pl-[10px]">
 					<text className=" text">Pickup Pincode:</text>
 					<input
-						className="input w-full"
+						className="box-border flex flex-row justify-center items-center p-2 gap-2 h-44 bg-white border-b border-gray-500 text-gray-700 w-[360px]"
 						type="text"
 						placeholder="430023"
 						value={pickupPincode}
@@ -163,10 +163,10 @@ const MainBusinessInfo = ({ initialValues = {} }) => {
 				</label>
 			</div>
 			<div className="sm:w-[790px] sm:ml-10">
-				<label className="labels">
+				<label className="flex flex-col items-start p-0 gap-[10px] w-[340px] h-[78px] pl-[10px]">
 					<text className=" text">Pickup Address:</text>
 					<input
-						className="input w-full sm:w-[790px]"
+						className="box-border flex flex-row justify-center items-center p-2 gap-2 h-44 bg-white border-b border-gray-500 text-gray-700 w-[360px] sm:w-[760px]"
 						type="text"
 						placeholder="(304) 555-0108"
 						value={pickupAddress}
@@ -178,10 +178,10 @@ const MainBusinessInfo = ({ initialValues = {} }) => {
 		<br />
 		<div className="sm:flex sm:flex-row gap-30">
 			<div className="sm:w-[360px] mr-10">
-				<label className="labels">
+				<label className="flex flex-col items-start p-0 gap-[10px] w-[340px] h-[78px] pl-[10px]">
 					<text className=" text">Store GSTIN:</text>
 					<input
-						className="input w-full"
+						className="box-border flex flex-row justify-center items-center p-2 gap-2 h-44 bg-white border-b border-gray-500 text-gray-700 w-[360px]"
 						type="text"
 						placeholder="Enter GSTIN"
 						value={storeGSTIN}
@@ -190,10 +190,10 @@ const MainBusinessInfo = ({ initialValues = {} }) => {
 				</label>
 			</div>
 			<div className="sm:w-[360px] mr-10">
-				<label className="labels">
+				<label className="flex flex-col items-start p-0 gap-[10px] w-[340px] h-[78px] pl-[10px]">
 					<text className=" text">State:</text>
 					<input
-						className="input w-full"
+						className="box-border flex flex-row justify-center items-center p-2 gap-2 h-44 bg-white border-b border-gray-500 text-gray-700 w-[360px]"
 						type="text"
 						placeholder="Punjab"
 						value={state}
@@ -202,10 +202,10 @@ const MainBusinessInfo = ({ initialValues = {} }) => {
 				</label>
 			</div>
 			<div className="sm:w-[410px]">
-				<label className="labels">
+				<label className="flex flex-col items-start p-0 gap-[10px] w-[340px] h-[78px] pl-[10px]">
 					<text className=" text">District</text>
 					<input
-						className="input w-full"
+						className="box-border flex flex-row justify-center items-center p-2 gap-2 h-44 bg-white border-b border-gray-500 text-gray-700 w-[360px]"
 						type="text"
 						placeholder="Enter Name"
 						value={district}
@@ -219,7 +219,7 @@ const MainBusinessInfo = ({ initialValues = {} }) => {
 
 
 			<button className="sm:flex  mb-5 mt-[20px] sm:mt-4 sm:flex-row flex flex-col justify-center items-center p-2 gap-[10px] w-[109px] h-[40px] bg-gradient-to-r from-primary to-secondary " type="submit">
-				<text className="button-text">Next </text>
+				<text className="w-[39px] h-[24px] font-poppins font-normal text-base leading-6">Next </text>
 			</button>
 		</div>
 	);

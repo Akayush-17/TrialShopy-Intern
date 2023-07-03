@@ -41,35 +41,35 @@ const MainVerification = ({ initialValues = {} }) => {
 	return (
 		<div className="flex flex-col items-center p-0 gap-30 absolute w-[360px] sm:w-[1200px] sm:h-[562px] sm:left-[120px] top-[151.2px] ">
 		   <div className="flex flex-row items-center gap-0 p-5 w-[360px] h-[45px] sm:w-[720px] sm:h-[90px] mb-16">
-               <div className="box">
+               <div className="flex flex-col items-center p-0 gap-10 w-[200px] h-[90px]">
                  <div className="flex flex-col justify-center items-center p-5 sm:p-10 gap-10 h-[25px] w-[25px] sm:w-[50px] sm:h-[50px] rounded-[60px] sm:rounded-[120px] bg-gradient-to-br from-gray-400 to-gray-900">
                    1
                  </div>
-                 <text className="lg:box-text text-sm font-semibold text-gray-800">Basic Info</text>
+                 <text className="sm:h-[30px] sm:font-poppins  sm:text-base leading-6 text-sm font-semibold text-gray-800">Basic Info</text>
                </div>
                <div className="sm:h-0 mt-[-40px] sm:mt-0 h-0 w-[50px] sm:border-[1px] border border-gray-900"></div>
-               <div className="box">
+               <div className="flex flex-col items-center p-0 gap-10 w-[200px] h-[90px]">
                  <div className="flex flex-col justify-center items-center p-5 sm:p-10 gap-10 h-[25px] w-[25px] sm:w-[50px] sm:h-[50px] rounded-[60px] sm:rounded-[120px] bg-gradient-to-br from-gray-400 to-gray-900">
                    2
                  </div>
-                 <text className="lg:box-text text-sm font-semibold text-gray-800">Business Info</text>
+                 <text className="sm:h-[30px] sm:font-poppins sm:text-base leading-6 text-sm font-semibold text-gray-800">Business Info</text>
                </div>
                <div className="sm:h-0 h-0 mt-[-40px] sm:mt-0 w-[50px] border border-gray-900"></div>
-               <div className="box">
+               <div className="flex flex-col items-center p-0 gap-10 w-[200px] h-[90px]">
                  <div className="flex flex-col justify-center items-center p-5 sm:p-10 gap-10 h-[25px] w-[25px] sm:w-[50px] sm:h-[50px] rounded-[60px] sm:rounded-[120px] bg-gradient-to-br from-gray-400 to-gray-900">
                    3
                  </div>
-                 <text className="lg:box-text text-sm font-semibold text-gray-800">Verification</text>
+                 <text className="sm:h-[30px] sm:font-poppins sm:text-base leading-6 text-sm font-semibold text-gray-800">Verification</text>
                </div>
             </div>
 
 			<div className="flex flex-col items-center pt-3 sm:p-0 sm:gap-[20px] w-[360px] sm:w-[676px] h-[274px] sm:top-[120px] sm:left-[262px] mt-2 mb-3">
 				<form onSubmit={handleSubmit}>
 					<div className="sm:flex sm:flex-row items-start lg:gap-30 p-0 w-1200 h-78 flex flex-col">
-						<label className="labels">
+						<label className="flex flex-col items-start p-0 gap-[10px] w-[340px] h-[78px] pl-[10px]">
 							<text className=" text">Enter Aadhar or VID:</text>
 							<input
-								className="input w-[360px]"
+								className="box-border flex flex-row justify-center items-center p-2 gap-2 h-44 bg-white border-b border-gray-500 text-gray-700 w-[360px]"
 								type="text"
 								placeholder="Enter Name"
 								value={aadharNumber}
@@ -78,14 +78,14 @@ const MainVerification = ({ initialValues = {} }) => {
 						</label>
 						<br />
 
-						<div className="upload sm:ml-10">
+						<div className="flex flex-col justify-center items-start p-0 gap-[10px] w-[296px] h-[74px] sm:ml-10">
 							<text>*Upload your Aadhar as a single file</text>
 							<div className="flex flex-row items-center p-0 gap-[10px] w-[293px] h-[40px]">
 								<button className="flex flex-row justify-center items-center mx-auto px-8 py-2 pl-6 space-x-1 h-10  w-[131px] bg-gradient-to-r from-primary to-secondary">
 									<img
 										className="w-[16px] h-[16px] top-4 left-4  rounded-sm"
 										src={UploadIcon} alt=""></img>
-									<text className="button-text">UPLOAD</text>
+									<text className="w-[39px] h-[24px] font-poppins font-normal text-base leading-6">UPLOAD</text>
 								</button>
 								<text className="w-[152px] h-[24px] font-poppins font-normal text-gray-400 text-sm leading-6">
 									Max File Size 20MB
@@ -95,10 +95,10 @@ const MainVerification = ({ initialValues = {} }) => {
 					</div>
 					<br />
 					<div className="sm:flex sm:flex-row items-start gap-30 p-0 w-1200 h-78 flex flex-col">
-						<label className="labels">
+						<label className="flex flex-col items-start p-0 gap-[10px] w-[340px] h-[78px] pl-[10px]">
 							<text className=" text">Enter PAN:</text>
 							<input
-								className="input w-[360px]"
+								className="box-border flex flex-row justify-center items-center p-2 gap-2 h-44 bg-white border-b border-gray-500 text-gray-700 w-[360px]"
 								type="text"
 								placeholder="430023"
 								value={panNumber}
@@ -107,14 +107,14 @@ const MainVerification = ({ initialValues = {} }) => {
 						</label>
 						<br />
 
-						<div className="upload sm:ml-10">
+						<div className="flex flex-col justify-center items-start p-0 gap-[10px] w-[296px] h-[74px] sm:ml-10">
 							<text>*Upload your PAN as a single file</text>
 							<div className="flex flex-row  items-center p-0 gap-[10px] w-[293px] h-[40px]">
 								<button className="flex flex-row justify-center items-center mx-auto px-8 py-2 pl-6 space-x-1 h-10 w-[131px] bg-gradient-to-r from-primary to-secondary">
 									<img
 										className="w-[16px] h-[16px] top-4 left-4 rounded-sm"
 										src={UploadIcon} alt=""></img>
-									<text className="button-text">UPLOAD</text>
+									<text className="w-[39px] h-[24px] font-poppins font-normal text-base leading-6">UPLOAD</text>
 								</button>
 								<text className="w-[152px] h-[24px] font-poppins font-normal text-gray-400 text-sm leading-6">
 									Max File Size 20MB
@@ -124,10 +124,10 @@ const MainVerification = ({ initialValues = {} }) => {
 					</div>
 					<br />
 					<div className="sm:flex sm:flex-row items-start gap-30 p-0 w-80 sm:w-1200 h-78 flex flex-col">
-						<label className="labels">
+						<label className="flex flex-col items-start p-0 gap-[10px] w-[340px] h-[78px] pl-[10px]">
 							<text className=" text">Enter GSTIN:</text>
 							<input
-								className="input w-[360px]"
+								className="box-border flex flex-row justify-center items-center p-2 gap-2 h-44 bg-white border-b border-gray-500 text-gray-700 w-[360px]"
 								type="text"
 								placeholder="430023"
 								value={GstinNumber}
@@ -136,14 +136,14 @@ const MainVerification = ({ initialValues = {} }) => {
 						</label>
 						<br />
 
-						<div className="upload sm:ml-10">
+						<div className="flex flex-col justify-center items-start p-0 gap-[10px] w-[296px] h-[74px] sm:ml-10">
 							<text>*Upload your GSTIN as a single file</text>
 							<div className="flex flex-row items-center p-0 gap-[10px] w-[293px] h-[40px]">
 								<button className="flex flex-row justify-center items-center mx-auto px-8 py-2 pl-6 space-x-1 h-10 w-[131px] text-center bg-gradient-to-r from-primary to-secondary ">
 									<img
 										className="w-[16px] h-[16px] top-4 left-4 rounded-sm"
 										src={UploadIcon} alt=""></img>
-									<text className="button-text">UPLOAD</text>
+									<text className="w-[39px] h-[24px] font-poppins font-normal text-base leading-6">UPLOAD</text>
 								</button>
 								<text className="w-[152px] h-[24px] font-poppins font-normal text-gray-400 text-sm leading-6">
 									Max File Size 20MB
@@ -156,7 +156,7 @@ const MainVerification = ({ initialValues = {} }) => {
 			<button
 				className="sm:flex mt-[360px] sm:mt-2 sm:flex-row flex flex-col justify-center items-center p-2 gap-[10px] w-[109px] h-[40px] bg-gradient-to-r from-primary to-secondary "
 				type="submit">
-				<text className="button-text text-black text-center">SUBMIT</text>
+				<text className="w-[39px] h-[24px] font-poppins font-normal text-base leading-6 text-black text-center">SUBMIT</text>
 			</button>
 		</div>
 	);
